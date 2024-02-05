@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Axrorbek</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Modal</h1>
+        <button onclick="fnOpen()" class="btn">open</button>
+        <div class="modal">
+            <div class="modal__header">
+                <h2 class="modal__title">modal title</h2>
+                <button onclick="fnClose()" class="modal__close">X</button>
+            </div>
+            <div class="modal__body">
+                ...
+            </div>
+            <div class="modal__footer">
+                <button onclick="fnClose()" class="modal__close">close</button>
+                <button>save</button>
+            </div>
+        </div>
+    </div>
+
+    <div onclick="fnClose()" class="modal__shadow">
+
+    </div>
+</body>
+<script src="./js/main.js"></script>
+</html>
